@@ -30,3 +30,6 @@ else:
 # Create the new filename structure:
 # Extract base filename from potential path (e.g., "data/example.txt" -> "example.txt")
 base_name = os.path.basename(filename)
+
+# Split into name and extension (e.g., "example.txt" -> ("example", ".txt"))
+base, ext = os.path.splitext(base_name)
