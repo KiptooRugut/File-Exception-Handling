@@ -33,3 +33,6 @@ base_name = os.path.basename(filename)
 
 # Split into name and extension (e.g., "example.txt" -> ("example", ".txt"))
 base, ext = os.path.splitext(base_name)
+
+# Create new filename with "_modified" suffix in existing "modified" folder directory
+new_filename = os.path.join(modified_dir, f"{base}_modified{ext}")
