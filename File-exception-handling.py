@@ -17,3 +17,8 @@ except IsADirectoryError:
     print(f"Error: '{filename}' is a directory, not a file.")
 except Exception as e:  # Catch-all for unexpected errors
     print(f"An unexpected error occurred while reading the file: {e}")
+
+# If file reading was successful, process the content
+else:
+    # Convert all lines to uppercase using list comprehension
+    modified_content = [line.upper() for line in content]
