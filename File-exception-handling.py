@@ -18,7 +18,10 @@ except IsADirectoryError:
 except Exception as e:  # Catch-all for unexpected errors
     print(f"An unexpected error occurred while reading the file: {e}")
 
-# If file reading was successful, process the content
+# If file reading is successful, process the content
 else:
     # Convert all lines to uppercase using list comprehension
     modified_content = [line.upper() for line in content]
+    
+    # Define the output directory path
+    modified_dir = "assets/modified"
