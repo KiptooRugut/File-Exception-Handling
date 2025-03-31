@@ -25,3 +25,8 @@ else:
     
     # Define the output directory path
     modified_dir = "assets/modified"
+
+
+# Create the new filename structure:
+# Extract base filename from potential path (e.g., "data/example.txt" -> "example.txt")
+base_name = os.path.basename(filename)
