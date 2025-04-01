@@ -43,5 +43,6 @@ else:
     except PermissionError:
         print(f"Error: You do not have permission to write to '{new_filename}'.")
     except Exception as e:  # Catch-all for other writing errors
-        print(f"An error occurred while writing to the file: {e}")except Exception as e:  # Catch-all for other writing errors
+        print(f"An error occurred while writing to the file: {e}")
+    except Exception as e:  # Catch-all for other writing errors
         print(f"An error occurred while writing to the file: {e}")
