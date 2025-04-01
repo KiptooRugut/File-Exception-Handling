@@ -34,7 +34,7 @@ else:
     # Create new filename with "_modified" suffix in existing "modified" folder directory
     new_filename = os.path.join(modified_dir, f"{base}_modified{ext}")
 
-    # Attempt to write the modified content to the new file
+    # Write the modified content to the new file
     try:
         with open(new_filename, 'w') as new_file:
             # Write all modified lines to the new file
